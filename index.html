@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align: center;">Welcome to my zoo!</h1>
+        <br>
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop">Hello!</button>
+    </div>
+    <!-- off canvas -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Welcome to my zoo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Our animals:
+            - Penguin
+            - Tiger
+            - Elephant
+            - Cheetah
+            - Shark
+            - Bear
+        </div>
+    </div>
+    <br>
+    <!-- buttons -->
+    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+
+        <a href="#card group1"> <button type="button" class="btn btn-primary">Penguin, Tiger & Elephant</button>
+        </a>
+        <a href="#card group2"> <button type="button" class="btn btn-primary">Cheetah, Shark & Bear</button></a>
+        <a href="#carouselExampleFade"> <button type="button" class="btn btn-primary">Pictures</button></a>
+        <a href="#collapseOne"> <button type="button" class="btn btn-primary">Information</button></a>
+    </div>
+    <!-- card group -->
+    <div class="card-group">
+        <div class="card">
+            <img src="penguin.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 id="Penguin" class="card-title">Penguin</h5>
+                <p class="card-text">Penguins are a group of aquatic flightless birds from the order Sphenisciformes
+                    (/sfɪˈnɪsəfɔːrmiːz/) of the family Spheniscidae (/sfɪˈnɪsɪdiː, -daɪ/).[4] They live almost
+                    exclusively in the Southern Hemisphere: only one species, the Galápagos penguin, is found north of
+                    the Equator. </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card" id="card group1">
+            <img src="tiger.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tiger</h5>
+                <p class="card-text">The tiger (Panthera tigris) is the largest living cat species and a member of the
+                    genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white
+                    underside. An apex predator, it primarily preys on ungulates, such as deer and wild boar. </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="elephant2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Elephant</h5>
+                <p class="card-text">Elephants are the largest living land animals. Three living species are currently
+                    recognised: the African bush elephant, the African forest elephant, and the Asian elephant. They are
+                    the only surviving members of the family Elephantidae and the order Proboscidea; extinct relatives
+                    include mammoths and mastodons.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    <!-- card gruop -->
+    <div class="card-group">
+        <div class="card" id="card group2">
+            <img src="Cheetah3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 id="Cheetah">Cheetah</h5>
+                <p class="card-text">The cheetah (Acinonyx jubatus) is a large cat with a tawny to creamy white or pale
+                    buff fur that is marked with evenly spaced, solid black spots. Its head is small and rounded, with a
+                    short snout and black tear-like facial streaks. It reaches 67–94 cm (26–37 in) at the shoulder, and
+                    the head-and-body length is between 1.1 and 1.5 m (3 ft 7 in and 4 ft 11 in). </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="shark2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Shark</h5>
+                <p class="card-text">Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton,
+                    five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head.
+                    Modern sharks are classified within the clade Selachimorpha (or Selachii) and are the sister group
+                    to the Batoidea (rays and kin).</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="bear.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Bear</h5>
+                <p class="card-text">Bears are carnivoran mammals of the family Ursidae (/ˈɜːrsɪdiː, -daɪ/). They are
+                    classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant,
+                    they are widespread, appearing in a wide variety of habitats throughout most of the Northern
+                    Hemisphere and partially in the Southern Hemisphere. </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    <!-- carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Cheetah3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="shark2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="bear.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- information -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Felidae
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong style="font-size: medium;">The cheetah and tiger are from the same family. </strong>Felidae
+                    (/ˈfɛlɪdiː/) is the family
+                    of
+                    mammals in the order Carnivora colloquially referred to as cats. A member of this family is also
+                    called a felid (/ˈfiːlɪd/). The term "cat" refers both to felids in general and
+                    specifically to the domestic cat (Felis catus).<code>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Sea animals
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong style="font-size: medium;">The shark lives in the water, and the penguin lives in and around the sea. </strong>The sharks are
+                    found in all seas and are common to depths up to 2,000 metres (6,600 ft). They generally do not live
+                    in freshwater, although there are a few known exceptions, such as the bull shark and the river
+                    shark, which can be found in both seawater and freshwater. The penguins spend about half of their
+                    lives on land and the other half in the sea. <code>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Mammals
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong style="font-size: medium;">The elephant and the bear are mammals. </strong> Elephants are the largest living land animals. Bears are carnivoran mammals of the family Ursidae. <code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
